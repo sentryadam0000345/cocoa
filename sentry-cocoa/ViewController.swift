@@ -15,8 +15,6 @@ class ViewController: UIViewController {
         super.viewDidLoad()
 
         SentrySDK.configureScope { (scope) in
-            //scope.setRelease("$(RELEASE_VERSION)")
-            //scope.setEnvironment("Production")
             scope.setTag(value: "swift", key: "language")
             scope.setTag(value: "enterprise", key: "customer-type")
             scope.setExtra(value: String(describing: self), key: "currentViewController")

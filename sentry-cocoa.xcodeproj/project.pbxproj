@@ -176,7 +176,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "if which sentry-cli >/dev/null; then\nexport SENTRY_ORG=testorg-az\nexport SENTRY_PROJECT=sentry-cocoa\nexport COCOA_ENVIRONMENT=Staging\nexport SENTRY_AUTH_TOKEN=2cf09ac0cc6a4449a91e45ad00e77345e76eeb1a27394ebda2eda3c726ffbf9a\n#export SENTRY_AUTH_TOKEN=\nERROR=$(sentry-cli upload-dif \"$DWARF_DSYM_FOLDER_PATH\" 2>&1 >/dev/null)\nif [ ! $? -eq 0 ]; then\necho \"warning: sentry-cli - $ERROR\"\nfi\nelse\necho \"warning: sentry-cli not installed, download from https://github.com/getsentry/sentry-cli/releases\"\nfi\n";
+			shellScript = "if which sentry-cli >/dev/null; then\nexport SENTRY_ORG=testorg-az\nexport SENTRY_PROJECT=sentry-cocoa\nexport COCOA_ENVIRONMENT=Staging\n#export SENTRY_AUTH_TOKEN=\nERROR=$(sentry-cli upload-dif \"$DWARF_DSYM_FOLDER_PATH\" 2>&1 >/dev/null)\nif [ ! $? -eq 0 ]; then\necho \"warning: sentry-cli - $ERROR\"\nfi\nelse\necho \"warning: sentry-cli not installed, download from https://github.com/getsentry/sentry-cli/releases\"\nfi\n";
 		};
 		799D4BCE6EB582F44C251E1D /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
