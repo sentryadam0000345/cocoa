@@ -7,14 +7,24 @@
 //
 
 import UIKit
+import Sentry
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+       
+         _ = SentrySDK(options: [
+               "dsn": "https://62340e8b48bd40dbb4382e0d92ad3385@sentry.io/5175254",
+               "environment": "Production"
+            
+            // "sampleRate": 0.6
+            //"release": ProcessInfo.processInfo.environment["RELEASE"] //
+               //"debug": true // Enabled debug when first installing is always helpful
+               // beforeSend:
+           ])
+        
         return true
     }
 

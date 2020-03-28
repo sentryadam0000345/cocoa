@@ -1,0 +1,6 @@
+framework module Pods_sentry_cocoa {
+  umbrella header "Pods-sentry-cocoa-umbrella.h"
+
+  export *
+  module * { export * }
+}

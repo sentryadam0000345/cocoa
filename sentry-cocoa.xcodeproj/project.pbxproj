@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,9 +13,12 @@
 		50B18AD4242C40490090B96C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50B18AD2242C40490090B96C /* Main.storyboard */; };
 		50B18AD6242C404B0090B96C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50B18AD5242C404B0090B96C /* Assets.xcassets */; };
 		50B18AD9242C404B0090B96C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50B18AD7242C404B0090B96C /* LaunchScreen.storyboard */; };
+		6AEC7C6114473CA26725CAEE /* Pods_sentry_cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6EA5CEE501EB6C37FE298E6 /* Pods_sentry_cocoa.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		252176612D0B71B07DF3782D /* Pods-sentry-cocoa.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sentry-cocoa.release.xcconfig"; path = "Target Support Files/Pods-sentry-cocoa/Pods-sentry-cocoa.release.xcconfig"; sourceTree = "<group>"; };
+		3F8C098177257CAD2C47B821 /* Pods-sentry-cocoa.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sentry-cocoa.debug.xcconfig"; path = "Target Support Files/Pods-sentry-cocoa/Pods-sentry-cocoa.debug.xcconfig"; sourceTree = "<group>"; };
 		50B18AC9242C40490090B96C /* sentry-cocoa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "sentry-cocoa.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		50B18ACC242C40490090B96C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		50B18ACE242C40490090B96C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +27,7 @@
 		50B18AD5242C404B0090B96C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		50B18AD8242C404B0090B96C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		50B18ADA242C404B0090B96C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B6EA5CEE501EB6C37FE298E6 /* Pods_sentry_cocoa.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_sentry_cocoa.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6AEC7C6114473CA26725CAEE /* Pods_sentry_cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		34A4F878E8627A12811B457B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B6EA5CEE501EB6C37FE298E6 /* Pods_sentry_cocoa.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		50B18AC0242C40490090B96C = {
 			isa = PBXGroup;
 			children = (
 				50B18ACB242C40490090B96C /* sentry-cocoa */,
 				50B18ACA242C40490090B96C /* Products */,
+				B853E19747B9C7541C92E8C1 /* Pods */,
+				34A4F878E8627A12811B457B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +82,15 @@
 			path = "sentry-cocoa";
 			sourceTree = "<group>";
 		};
+		B853E19747B9C7541C92E8C1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3F8C098177257CAD2C47B821 /* Pods-sentry-cocoa.debug.xcconfig */,
+				252176612D0B71B07DF3782D /* Pods-sentry-cocoa.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +98,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 50B18ADD242C404B0090B96C /* Build configuration list for PBXNativeTarget "sentry-cocoa" */;
 			buildPhases = (
+				AA16D1D9BE5062FE555BEBB2 /* [CP] Check Pods Manifest.lock */,
 				50B18AC5242C40490090B96C /* Sources */,
 				50B18AC6242C40490090B96C /* Frameworks */,
 				50B18AC7242C40490090B96C /* Resources */,
+				799D4BCE6EB582F44C251E1D /* [CP] Embed Pods Frameworks */,
+				50132D44242EA4E600E56BE6 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -103,7 +130,7 @@
 				};
 			};
 			buildConfigurationList = 50B18AC4242C40490090B96C /* Build configuration list for PBXProject "sentry-cocoa" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 10.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -132,6 +159,65 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		50132D44242EA4E600E56BE6 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which sentry-cli >/dev/null; then\nexport SENTRY_ORG=testorg-az\nexport SENTRY_PROJECT=sentry-cocoa\nexport COCOA_ENVIRONMENT=Staging\nexport SENTRY_AUTH_TOKEN=2cf09ac0cc6a4449a91e45ad00e77345e76eeb1a27394ebda2eda3c726ffbf9a\n#export SENTRY_AUTH_TOKEN=\nERROR=$(sentry-cli upload-dif \"$DWARF_DSYM_FOLDER_PATH\" 2>&1 >/dev/null)\nif [ ! $? -eq 0 ]; then\necho \"warning: sentry-cli - $ERROR\"\nfi\nelse\necho \"warning: sentry-cli not installed, download from https://github.com/getsentry/sentry-cli/releases\"\nfi\n";
+		};
+		799D4BCE6EB582F44C251E1D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-sentry-cocoa/Pods-sentry-cocoa-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-sentry-cocoa/Pods-sentry-cocoa-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-sentry-cocoa/Pods-sentry-cocoa-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AA16D1D9BE5062FE555BEBB2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-sentry-cocoa-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		50B18AC5242C40490090B96C /* Sources */ = {
@@ -282,14 +368,19 @@
 		};
 		50B18ADE242C404B0090B96C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3F8C098177257CAD2C47B821 /* Pods-sentry-cocoa.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = "sentry-cocoa/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "sentry.sentry-cocoa";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -299,14 +390,18 @@
 		};
 		50B18ADF242C404B0090B96C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 252176612D0B71B07DF3782D /* Pods-sentry-cocoa.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = "sentry-cocoa/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "sentry.sentry-cocoa";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
