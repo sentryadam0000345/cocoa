@@ -5,6 +5,6 @@ use_frameworks!
 
 target 'sentry-cocoa' do
 	
-	pod 'Sentry', :git => 'https://github.com/getsentry/sentry-cocoa.git', :tag => '5.0.0-beta.0'
+	pod 'Sentry', :git => 'https://github.com/getsentry/sentry-cocoa.git', :tag => '5.0.0-beta.4'
 
 end
