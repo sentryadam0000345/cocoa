@@ -16,7 +16,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
        
          _ = SentrySDK(options: [
-               "dsn": "https://62340e8b48bd40dbb4382e0d92ad3385@sentry.io/5175254",
+               "dsn":"https://c5b2524c1664477f90552f4ab9e11d14@o87286.ingest.sentry.io/5246902",
                "environment": "Production",
                "enableAutoSessionTracking": true,
                 // "sampleRate": 0.6
